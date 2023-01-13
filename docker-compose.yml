@@ -1,0 +1,24 @@
+version: '3'
+services:
+  jupyterlab:
+    build: .
+    restart: always
+    # entrypoint: >
+    #   jupyter-lab
+    #   --allow-root
+    #   --ip=0.0.0.0
+    #   --port=8888
+    #   --no-browser
+    #   --NotebookApp.token=''
+    #
+    tty : true
+    expose:
+      - "8888"
+    ports:
+      - "127.0.0.1:8888:8888"
+    volumes:
+      - ./workspace:/workspace
+    working_dir: /workspace
+
+    command:
+      jupyter-lab --ip 0.0.0.0 --allow-root --NotebookApp.token='' --port=8888 --notebook-dir=/workspace -b localhost
