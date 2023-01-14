@@ -14,7 +14,7 @@
 ## Introduction
 
 秒速で構築できる`Jupyterlab`の環境です．
-
+外部からのアクセスも可能です．
 
 ## Quick Start
 
