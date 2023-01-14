@@ -1,6 +1,6 @@
 # Jupyterlab
 
-![image](Docs\images\jupiter-moons-space-5k-13-1920x1080.jpg)
+![image](Docs/images/jupiter-moons-space-5k-13-1920x1080.jpg)
 
 # Index
 
